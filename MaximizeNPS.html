@@ -9,7 +9,7 @@
 </head>
 <body onload="brython()">
     <h2>NPS Monte Carlo Simulation with Tiered Top-Ups</h2>
-    <button onclick="runSimulation()">Run Simulation</button>
+    <button id="runButton">Run Simulation</button>
     <canvas id="corpusChart" width="400" height="200"></canvas>
     <canvas id="topUpChart" width="400" height="200"></canvas>
     
@@ -18,7 +18,7 @@
         import random
         import json
 
-        def runSimulation():
+        def runSimulation(event=None):
             years = 30
             months = years * 12
             monthly_contribution = 10000
@@ -76,6 +76,8 @@
                     }]
                 }
             })
+        # Attach runSimulation to button
+        document["runButton"].bind("click", runSimulation)
     </script>
 </body>
 </html>
