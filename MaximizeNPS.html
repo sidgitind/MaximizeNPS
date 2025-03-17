@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,14 +11,12 @@
     <h2>NPS Monte Carlo Simulation with Tiered Top-Ups</h2>
     <button id="runButton">Run Simulation</button>
     <canvas id="corpusChart" width="400" height="200"></canvas>
-    <canvas id="topUpChart" width="400" height="200"></canvas>
-    
-    <script type="text/python">
-        from browser import document
-        import random
-        import json
 
-        def runSimulation(event=None):
+    <script type="text/python">
+        from browser import document, window
+        import random
+
+        def runSimulation(event=None):  # Add event argument for compatibility
             years = 30
             months = years * 12
             monthly_contribution = 10000
@@ -62,7 +60,6 @@
             updateChart("corpusChart", "Final Corpus (₹ Cr)", [avg_without_topup / 1e7, avg_with_topup / 1e7], ["Without Top-Up", "With Top-Up"])
 
         def updateChart(canvas_id, label, data, labels):
-            from browser import window
             Chart = window.Chart
             ctx = document[canvas_id].getContext("2d")
             window.chart = Chart.new(ctx, {
@@ -76,6 +73,7 @@
                     }]
                 }
             })
+
         # Attach runSimulation to button
         document["runButton"].bind("click", runSimulation)
     </script>
