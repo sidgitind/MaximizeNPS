@@ -1,4 +1,5 @@
-📊 NPS Corpus Growth Simulation with Top-Up & Optimal Allocation
+📊 **NPS Corpus Growth Simulation with Top-Up & Optimal Allocation**
+
 🚀 Overview
 This application simulates the long-term growth of your National Pension System (NPS) corpus by applying different investment strategies over 30 years. The simulation uses a Monte Carlo approach to account for market variability and identify the optimal strategy.
 
@@ -68,21 +69,6 @@ Higher deviation indicates more uncertainty, while lower deviation suggests more
 
 More simulations reduce deviation and stabilize predictions.
 
-🛠️ How to Run the Simulation
-Prerequisites:
-Python 3.8+
-
-Required packages:
-
-bash
-Copy
-Edit
-pip install numpy matplotlib pandas
-Run the Code:
-bash
-Copy
-Edit
-python nps_simulation.py
 📢 Next Steps
 Fine-tuning: Experiment with different top-up thresholds and allocation rules.
 
