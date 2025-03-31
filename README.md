@@ -81,6 +81,18 @@ Higher deviation indicates more uncertainty, while lower deviation suggests more
 
 More simulations reduce deviation and stabilize predictions.
 
+**📊 Percentile Insights**
+
+**📢 Percentile Interpretation**
+
+90th Percentile: The best-case scenario where the corpus performs better than 90% of the simulations.
+
+50th Percentile: The median case where the corpus performs better than 50% of the simulations—considered the most likely outcome.
+
+10th Percentile: The worst-case scenario where the corpus performs better than only 10% of the simulations, indicating a downside risk.
+
+📊 Percentiles give a range of possible outcomes, helping you to understand both the upside potential and downside risks in the strategy.
+
 **📢 Next Steps**
 
 Fine-tuning: Experiment with different top-up thresholds and allocation rules.
