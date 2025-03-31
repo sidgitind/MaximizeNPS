@@ -4,6 +4,8 @@
 
 This application simulates the long-term growth of your National Pension System (NPS) corpus by applying different investment strategies over 30 years. The simulation uses a Monte Carlo approach to account for market variability and identify the optimal strategy.
 
+This project has been completely built using genAI - ChatGPT. 
+
 🎯 Project Goals
 
 **Baseline Growth**: Simulate corpus growth with a fixed monthly contribution and no adjustments.
