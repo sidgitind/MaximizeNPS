@@ -36,7 +36,8 @@ Top-up buys additional units at a lower NAV, potentially boosting future growth.
 
 **Optimal Allocation Logic:**
 
-Equity and debt allocations are adjusted periodically to balance risk and returns.
+Asset class and their distribution as mandated by NPS in the Active strategy are followed
+Equity, Corporate Bond, Governement Bond, Alternative asset allocations are adjusted periodically to balance risk and returns.
 
 The NAV of equity and debt grows independently based on simulated market conditions.
 
@@ -68,16 +69,7 @@ Top-Up Amount: ₹10,000 per dip.
 
 Cooling Period: 12 months (no subsequent top-up in this period after a dip).
 
-Top-Up Unit Calculation:
-
-Units Added
-=
-Top-Up Amount
-NAV at Dip
-Units Added= 
-NAV at Dip
-Top-Up Amount
-​
+Top-up safety net: No top-up if the market dips more than 30%
  
 **📊 Optimal Allocation Strategy**
 
